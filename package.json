@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-underscore",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Compile and render underscore templates",
   "keywords": [
     "jstransformer"
