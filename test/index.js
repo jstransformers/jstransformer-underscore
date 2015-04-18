@@ -1,13 +1,30 @@
+
 'use strict';
 
 var assert = require('assert');
-var transformer = require('../');
+var fs = require('fs');
+var join = require('path').join;
+var test = require('testit');
 
-var result = transformer.compile("Using 'with': <%= data.answer %>", {variable: 'data'})({answer: 'no'});
+var transform = require('../');
 
-assert(result === "Using 'with': no");
+var input = "Using 'with': <%= data.answer %>";
+var options = { variable: 'data' };
+var locals = { answer: 'no' };
+var expected = "Using 'with': no";
 
-var client = transformer.compileClient("Using 'with': <%= data.answer %>", {variable: 'data'});
-assert(Function('', 'return ' + client)()({answer: 'no'}) === "Using 'with': no");
+function assertEqual(output, expected) {
+  console.log('   Output:\t'   + JSON.stringify(output));
+  console.log('   Expected:\t' + JSON.stringify(expected));
+  assert.equal(output, expected);
+}
 
-console.log('tests passed');
+test(transform.name + '.compile()', function () {
+  var output = transform.compile(input, options)(locals);
+  assertEqual(output, expected);
+});
+
+test(transform.name + '.compileClient()', function () {
+  var client = transform.compileClient(input, options);
+  assertEqual(Function('', 'return ' + client)()(locals), expected)
+});

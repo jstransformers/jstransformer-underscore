@@ -1,15 +1,24 @@
 {
   "name": "jstransformer-underscore",
-  "version": "1.0.0",
-  "description": "Compile and render underscore templates",
+  "version": "1.1.0",
+  "description": "Underscore Template support for JSTransformers.",
   "keywords": [
-    "jstransformer"
+    "jstransformer",
+    "underscore"
+  ],
+  "files": [
+    "index.js"
   ],
   "dependencies": {
-    "underscore": "^1.7.0"
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.5",
+    "testit": "^2.0.2"
   },
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "coverage": "istanbul cover test"
   },
   "repository": {
     "type": "git",
