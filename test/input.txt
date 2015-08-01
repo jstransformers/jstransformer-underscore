@@ -1,1 +1,1 @@
-Using 'with': <%= data.answer %>
+Hello, <%= data.name %>!
