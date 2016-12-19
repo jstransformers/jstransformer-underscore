@@ -1,27 +1,31 @@
 {
-  "name": "jstransformer-underscore",
-  "version": "1.2.0",
-  "description": "Underscore Template support for JSTransformers.",
   "dependencies": {
     "underscore": "^1.8.3"
   },
+  "name": "jstransformer-underscore",
+  "version": "1.2.1",
+  "description": "Underscore Template support for JSTransformers.",
   "keywords": [
-    "jstransformer",
-    "underscore"
+    "jstransformer"
   ],
   "files": [
     "index.js"
   ],
   "devDependencies": {
-    "test-jstransformer": "^1.0.0"
+    "test-jstransformer": "^1.0.0",
+    "xo": "^0.17.1"
   },
   "scripts": {
+    "coverage": "test-jstransformer coverage",
     "test": "test-jstransformer",
-    "coverage": "test-jstransformer coverage"
+    "posttest": "xo --space --no-semicolon index.js"
+  },
+  "engines": {
+    "node": ">=4"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jstransformers/jstransformer-foo.git"
+    "url": "https://github.com/jstransformers/jstransformer-underscore.git"
   },
   "author": {
     "name": "JSTransformers Team",
