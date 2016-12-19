@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # jstransformer-underscore
 
 [Underscore Template](http://underscorejs.org/#template) support for [JSTransformers](http://github.com/jstransformers/jstransformer).
