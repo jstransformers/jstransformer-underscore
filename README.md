@@ -1,5 +1,7 @@
 # jstransformer-underscore
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-underscore.svg)](https://greenkeeper.io/)
+
 [Underscore Template](http://underscorejs.org/#template) support for [JSTransformers](http://github.com/jstransformers/jstransformer).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-underscore/master.svg)](https://travis-ci.org/jstransformers/jstransformer-underscore)
