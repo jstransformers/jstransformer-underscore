@@ -1,6 +1,6 @@
 'use strict'
 
-var _ = require('underscore')
+const _ = require('underscore')
 
 exports.name = 'underscore'
 exports.outputFormat = 'html'
