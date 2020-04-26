@@ -5,7 +5,6 @@
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-underscore/master.svg)](https://travis-ci.org/jstransformers/jstransformer-underscore)
 [![Coverage Status](https://img.shields.io/codecov/c/github/jstransformers/jstransformer-underscore/master.svg)](https://codecov.io/gh/jstransformers/jstransformer-underscore)
 [![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-underscore/master.svg)](http://david-dm.org/jstransformers/jstransformer-underscore)
-[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-underscore.svg)](https://greenkeeper.io/)
 [![NPM version](https://img.shields.io/npm/v/jstransformer-underscore.svg)](https://www.npmjs.org/package/jstransformer-underscore)
 
 ## Installation
